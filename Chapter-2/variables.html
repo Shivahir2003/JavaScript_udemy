@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chapter-2 | Variables |</title>
+</head>
+<body>
+    <script>
+        // #  types of variables #
+        // 1. var
+        // 2. let
+        // 3. const
+
+        // 1.var
+
+            var x = 25;
+            var x = 100; //overwrite
+                x = 40; ////overwrite
+            // all will runs 
+            // it allows all type of declaration
+
+        // 2.let
+
+            let y = 20;
+         // let y = 25; // not allowed
+         //     y = 50  // allows
+            // we can not declare same variable in two times
+            // we can assign values into multiple times
+            
+        // 3.const
+
+            const z = 10;
+        //  const z = 20; // not allowed
+        //        z = 40;// not allowed
+            // we can declare a variable and assign value only one time 
+            // we can not change value of variable
+
+        
+        // # Global and local variables #
+
+            var a = 20 ;
+            function fun()
+            { 
+
+                var b = 25; //  local variable
+                document.write(a);
+                document.write(b);
+                
+                // local variables are acces in code block only
+                // but global we can access it anywhere
+            }
+            fun();
+
+            document.write(a);
+            // document.write(b);  show undefine error in console
+
+
+        // # advance  console.log #
+            
+            // for output see console only
+            var name = "shivam";
+
+            console.log(name);
+            console.error(name);
+                //console.error(['shivam', 'shiv', 'ahir']); 
+            console.table(['shivam', 'shiv', 'ahir']);
+            console.warn(name);
+
+            console.time("test");  // to check time taken to run statement 
+            
+            console.warn(name);
+            console.warn(name);
+            console.warn(name);
+            console.warn(name);
+            console.warn(name);
+            console.warn(name);
+            console.warn(name);
+            console.warn(name);
+            console.warn(name);
+
+            console.timeEnd("test") // end of time
+
+
+    </script>
+</body>
+</html>
