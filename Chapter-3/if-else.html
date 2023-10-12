@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter-3 | If-else | </title>
+</head>
+<body>
+    <script>
+
+        // # if else condition #
+
+        var x=100;
+        var y=50;
+        
+        if(x != y)
+        {
+            document.write("true");
+        }
+        else
+        {
+            document.write("flase");
+        }
+
+        // # condition ternary statement #
+        document.write("<br>");
+
+        var a = 200;
+        var b;
+
+        a == 200 ? (b = "yes" ) : (b = "No");
+        document.write(b)
+
+        // # Switch case  #
+        document.write("<br>");
+
+        var day =1
+        switch(day)
+        {
+            case 0:
+                document.write("today is monday ");
+                break;
+            case 1:
+                document.write("today is tuesday ");
+                break;
+            case 2:
+                document.write("today is wednesday ");
+                break;
+            case 3:
+                document.write("today is thursday ");
+                break;
+            case 4:
+                document.write("today is friday ");
+                break;
+            case 5:
+                document.write("today is saturday ");
+                break;
+            case 6:
+                document.write("today is sunday");
+                break;
+            default :
+                document.write("enter a valid number");
+                braek;
+        }
+
+        // # continue and break statement #
+        document.write("<br>");
+        for(var a= 1 ; a<=10 ; a++)
+        {
+            if(a==7)
+            {
+                document.write("continue" + a + "<br>");
+                continue; // this statement will go back to for loop without going to next line
+            }
+            else if(a==5)
+            {
+                document.write("awesome" + a + "<br>");
+                braek; // thos statement will terminate the whole loop
+            }
+            document.write("number" + a + "<br>");
+        }
+        
+        // # Data types #
+
+        document.write("<br>");
+        // there are seven type of data types 
+
+            var hello = "shivam"; // strings
+
+            var x = 30;      // numbers
+            var x = true;   // boolean
+            var x = ["HTML", "CSS", "JavaScript"];  // array
+            var x = {   
+                        first : "shiv" ,
+                        last : "ahir"
+                    };  // objects
+            var x ; // undefined
+            var x = null; //null
+
+            // document.write(typeof hello);
+
+
+
+        </script>
+    </body>
+</html>
