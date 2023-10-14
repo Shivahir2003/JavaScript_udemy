@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter-5 | Function |</title>
+    <style>
+        h1 {
+            color: red;
+        }
+
+        pre {
+            background-color: lightgray;
+            padding: 23px;
+            font-size: 17px;
+            color: black;
+            width: fit-content;
+            padding-left: 0;
+            border-radius: 23px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1> Why Functions?</h1>
+    <h3>With functions you can reuse code</h3>
+    <h3>You can write code that can be used many times.</h3>
+    <h3>You can use the same code with different arguments, to produce different results.</h3>
+
+    <h1> how to write function?</h1>
+    <pre>
+        function abc(){
+            document.write("Hello world");
+        }
+
+        abc();
+    </pre>
+    <script>
+        function abc() {
+            document.write("Hello world");
+        }
+
+        abc();
+    </script>
+
+    <h1> function with parameters</h1>
+    <pre>
+        function name(first, last){
+
+            document.write("my name is" + first +  last)
+        }
+
+        name("shiv", "ahir");
+
+    </pre>
+    <script>
+        function name(first, last) {
+
+            document.write("my name is " + first + " " + last)
+        }
+
+        name("shiv", "ahir");
+    </script>
+
+    <h1> function with return</h1>
+    <pre>
+
+    function sum(Math, Che, Phy){
+
+        var x=Math + Che + Phy;
+        return x;
+    }
+    function per(total)
+    {
+        var y= (total/300)*100;
+        return y;
+    }
+
+    var ans= sum(50, 40, 30);
+    per(ans);
+
+    </pre>
+
+    <script>
+        function sum(Math, Che, Phy) {
+
+            var x = Math + Che + Phy;
+            return x;
+        }
+        function per(total) {
+            var y = (total / 300) * 100;
+            return y;
+        }
+
+        var ans = sum(50, 40, 30);
+        
+        document.write(ans + "<br>");
+        document.write(per(ans)); 
+
+    </script>
+
+    
+
+
+</body>
+
+</html>
