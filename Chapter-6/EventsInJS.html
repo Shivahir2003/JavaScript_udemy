@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter-6 | Events in javaScript |</title>
+    <style>
+        .pos-ul{
+            position: absolute;
+            top: 80px;
+            right: 320px;
+        }
+        
+        .ul-right li{
+            font-size: 32px;
+            margin-bottom: 13px;
+            margin-left: 280px;
+            margin-right: 0;
+        }
+        .ul-left li{
+            font-size: 32px;
+            margin-bottom: 13px;
+           
+        }
+        .gr{
+            color: green;
+        }
+        .or
+        {
+            color: orange;
+        }
+        .yl{
+            color: blueviolet;
+        }
+        span{
+            font-size: 24px;
+        }
+        .red{
+            color: brown;
+
+
+        }
+        pre {
+            background-color: lightgray;
+            padding: 23px;
+            font-size: 17px;
+            margin-left: 180px;
+            color: black;
+            width: max-content;
+            padding-left: 0;
+            border-radius: 23px;
+            
+        }
+        .btn{
+
+            font-size: 17px;
+            padding: 0px;
+            background: red;
+        }
+       
+        h1{
+            color: rgb(218, 72, 32);
+        }
+    </style>
+</head>
+<body>
+    <h1 align="center" > javaScript Events</h1>
+    <ul class="ul-right">
+        <li class="gr">Click</li>
+        <li class="gr">Right Click</li>
+        <li class="gr">Double Click</li>
+        <li class="or">Mouse Hover</li>
+        <li class="or">Mouse Out</li>
+        <li class="or">Mouse Down</li>
+        <li class="or">Mouse Up</li>
+
+        
+    </ul>
+    <ul class="ul-left pos-ul" >
+        <li class="yl">key press Out</li>
+        <li class="yl">Key Up</li>
+        <li class="red">Load</li>
+        <li class="red">Unload</li>
+        <li class="red">Resize</li>
+        <li class="red">Scroll</li>
+
+    </ul>
+    
+    <pre>
+        <span>action should be performed when user clicks on certin button </span>
+        <br>
+
+        < button onclick="fun()" >
+        Click here
+        < button >
+
+        
+        function fun(){
+            // document.write("hello world");
+            alert("Hello");
+        }    
+
+        <!--you can change event here-->
+        <button  class="btn" onclick="fun()">     Click here    </button>
+
+    </pre>
+    
+
+
+    <script>
+        //action should be performed when user clicks on certin button 
+        function fun(){
+            // document.write("hello world");
+            alert("Hello");
+        }    
+        // fun();
+    </script>
+    
+</body>
+</html>
