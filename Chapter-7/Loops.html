@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter-7 | Loops in Java Script |</title>
+    <style>
+        pre {
+            background-color: lightgray;
+            padding: 23px;
+            font-size: 17px;
+            margin-left: 180px;
+            color: black;
+            width: max-content;
+            padding-left: 0;
+            border-radius: 23px;
+        }
+
+        .mg-3 {
+            margin-left: 34px;
+        }
+
+        ol {
+            list-style: none;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 align="center" style="color: brown;">Loops in javaScript</h1>
+
+    <h3 class="mg-3">
+        ==> Loops can execute a block of code a number of times.
+    </h3>
+    <br>
+    <ol>
+        <li>
+            <h3 class="mg-3">
+                ==>JavaScript supports different kinds of loops:
+
+                <ul type="disc"> &nbsp; &nbsp;&nbsp;
+                    <li>While Loop</li>
+                    <li>For Loop</li>
+                    <li>Do While Loop</li>
+                </ul>
+            </h3>
+        </li>
+    </ol>
+
+
+    
+        <pre><h5>
+        While Loop</h5>
+        var a=1;
+        while(a <= 10)
+        {
+            document.write(a + ")Hello< br>");
+            a++;
+        }
+            
+        </pre>
+        
+        <script>
+        document.write("<h3>Using while Loop</h3>");
+        var a = 1;
+        while (a <= 10) {
+            document.write(a + ")Hello<br>");
+            a++;
+        }
+    </script>
+    <pre><h5>
+    Do While Loop</h5>
+        var a = 1;
+        do {
+            document.write(a + ")Hello< br>");
+            a++;
+        } while (a <= 10);
+</pre>
+    <script>
+        var a = 1;
+        document.write("<h3>Using Do while Loop</h3>");
+        do {
+
+            document.write(a + ")Hello<br>");
+            a++;
+        } while (a <= 10);
+    </script>
+
+    <pre><h5>
+    For Loop</h5>
+        for(var a=1; a<=10; a++)
+        {
+            document.write(a + ")Hello< br>");
+        }
+</pre>
+    <script>
+        document.write("<h3>Using For Loop</h3>");
+
+        for (var a = 1; a <= 10; a++) {
+            document.write(a + ")Hello<br>");
+        }
+    </script>
+
+    <pre><h5>
+    nested Loop</h5>
+        for (var a = 1; a <= 5; a++) 
+        {
+            for(var b = 1; b <= a; b++) 
+            {
+                document.write("* ");
+            }
+            document.write("< br>");
+    }
+</pre>
+    <script>
+        document.write("<h3>Using nested Loop</h3>");
+
+        for (var a = 1; a <= 5; a++) {
+            for (var b = 1; b <= a; b++) 
+            {
+                document.write("* ");
+            }
+            document.write("<br>");
+        }
+    </script>
+
+</body>
+
+</html>
