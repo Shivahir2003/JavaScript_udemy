@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter-9 / part-2 / | Array Object |</title>
+    <Style>
+        pre {
+            background-color: rgb(0, 0, 0);
+            padding: 23px;
+            font-size: 17px;
+            margin-left: 180px;
+            color: rgb(40, 155, 42);
+            width: max-content;
+            padding-left: 0;
+            border-radius: 23px;
+        }
+
+        .mg-3 {
+            margin-left: 34px;
+        }
+        .heading{
+            color: brown;
+            display: flex;
+            justify-content: center;
+        }
+    </Style>
+</head>
+
+<body>
+    <h1 class="heading">Array Objects</h1>
+    <h3 class="mg-3">
+        ==> Make an object in array
+    </h3>
+    <pre>
+        var friend = [
+            {
+                name: "shivam",
+                age: 21,
+            },
+            {
+                name: "jil",
+                age: 21,
+            },
+            {
+                name: "arti",
+                age: 20,
+            },
+        ];
+        console.log(friend);
+        for(var a=0; a< friend.length; a++)
+        {
+            document.write( "Name : " + friend[a].name + "< br>");
+            document.write( "age : " + friend[a].age + "< br>" + "< br>");
+        }
+
+    </pre>
+
+    <script>
+        var friend = [
+            {
+                name: "shivam",
+                age: 21,
+            },
+            {
+                name: "jil",
+                age: 21,
+            },
+            {
+                name: "arti",
+                age: 20,
+            },
+        ];
+
+
+        console.log(friend);
+        for (var a = 0; a < friend.length; a++) {
+            document.write("Name : " + friend[a].name + "<br>");
+            document.write("age : " + friend[a].age + "<br>" + "<br>");
+        }
+
+    </script>
+
+    <h3 class="mg-3">
+        == > print object using for in loop 
+    </h3>
+    <pre>
+        var a={
+            firstname : "shiv",
+            lastname : "Ahir",
+            age: 21,
+        };
+
+        for( var key in a)
+        {
+            document.write(key + " :  "+ a[key] + "< br>");
+        }
+
+    </pre>
+    <script>
+        var a={
+            firstname : "shiv",
+            lastname : "Ahir",
+            age: 21,
+        };
+
+        for( var key in a)
+        {
+            document.write(key + " :  "+ a[key] + "<br>");
+        }
+    </script>
+
+
+
+
+</body>
+
+</html>

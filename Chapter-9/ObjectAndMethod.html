@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter-9 | Object and their Method |</title> <!-- //date 18-10-23 -->
+    <Style>
+        pre {
+            background-color: rgb(0, 0, 0);
+            padding: 23px;
+            font-size: 17px;
+            margin-left: 180px;
+            color: rgb(40, 155, 42);
+            width: max-content;
+            padding-left: 0;
+            border-radius: 23px;
+        }
+        .mg-3 {
+            margin-left: 34px;
+        }
+        .heading{
+            color: brown;
+            display: flex;
+            justify-content: center;
+        }
+    </Style>
+</head>
+
+<body>
+    <h1 class="heading">Objects in javaScript</h1>
+
+    <h3 class="mg-3">
+        ==> An array is a represent as an objet <br>
+        ==> An Object is represent as an object
+    </h3>
+    <pre>
+
+            var a={
+                name: "shiv",
+                age: 21,
+                sem: 7,
+                roll: 145,
+                skill: ["Reactjs" , "Asp.netCore" , "dataStructures"]
+            };
+            document.write(a + "   This will not be printed like this <b>check console for it</b>");
+            console.log(a);
+            document.write("< br>" + "you want to print in web page you can do this");
+            document.write("< br>" + a.name + " < br> " + a.age + " <  br> "  + a.sem);
+            document.write("< br>" + a.skill.join(",  ") );
+            
+        
+    </pre>
+
+    <script>
+        var a = {
+            name: "shiv",
+            age: 21,
+            sem: 7,
+            roll: 145,
+            skill: ["Reactjs", "Asp.netCore", "dataStructures"]
+        };
+        document.write(a + "   This will not be printed like this <b>check console for it</b>");
+        console.log(a);
+        document.write("<br>" + "you want to print in web page you can do this");
+        document.write("<br>" + a.name + " <br> " + a.age + " <br> " + a.sem);
+        document.write("<br>" + a.skill.join(",  "));
+
+    </script>
+     <h2 class="mg-3">
+        ==> making function in object
+    </h2>
+
+    <pre>
+        var b = {
+            name: "shiv",
+            age: 21,
+            sem: 7,
+            roll: 145,
+            skill: ["Reactjs", "Asp.netCore", "dataStructures"],
+            income: function (){
+                return 25000;
+            },
+            FUN: function (){
+                return this.name + " " + this.age + " " + this.sem ;
+            }
+
+        };
+
+        console.log(b.income());
+        console.log(b.FUN());
+        console.log(b);
+    </pre>
+
+    <script>
+        var b = {
+            name: "shiv",
+            age: 21,
+            sem: 7,
+            roll: 145,
+            skill: ["Reactjs", "Asp.netCore", "dataStructures"],
+            income: function (){
+                return 25000;
+            },
+            FUN: function (){
+                return this.name + " " + this.age + " " + this.sem ;
+            }
+
+        };
+
+        console.log(b.income());
+        console.log(b.FUN());
+        console.log(b);
+    </script>
+
+    <h2 class="mg-3">
+        ==> onether way to make an object
+    </h2>
+    <pre>
+        var first = new Object();
+        first.name = "Shivam";
+        first.age = 21;
+        first.sem = 7;
+        document.write(first.name + "< br>" + first.age + "< br>" + first.sem);
+    </pre>
+
+    <script>
+        var first = new Object();
+        first.name = "Shivam";
+        first.age = 21;
+        first.sem = 7;
+        document.write(first.name + "<br>" + first.age + "<br>" + first.sem);
+
+    </script>
+
+
+</body>
+
+</html>
