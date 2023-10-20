@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter-11 | Date Method |</title>
+    <style>
+        pre {
+            background-color: rgb(0, 0, 0);
+
+            padding: 23px;
+            font-size: 17px;
+            margin-left: 180px;
+            color: rgb(40, 155, 42);
+            width: max-content;
+            padding-left: 0;
+            border-radius: 23px;
+        }
+
+        .mg-3 {
+            margin-left: 34px;
+        }
+
+        .heading {
+            color: brown;
+            display: flex;
+            justify-content: center;
+        }
+
+        .font {
+            font-size: 32px;
+        }
+
+        .ul-right li {
+
+            margin-bottom: 12px;
+            margin-left: 28px;
+            margin-right: 0px;
+        }
+
+        .pos-ul-center {
+            position: absolute;
+            left: 444px;
+            top: -34px;
+            /* left: 28px; */
+            /* top: -350px; */
+            margin-bottom: 10px;
+            margin-left: 28px;
+            margin-right: 0px;
+
+        }
+
+        .ul-left li {
+
+            margin-bottom: 13px;
+
+        }
+
+        .pos-ul-right {
+            position: absolute;
+            left: 850px;
+            top: -34px;
+        }
+
+        .gr {
+            color: green;
+        }
+
+        .or {
+            color: orange;
+        }
+
+        .yl {
+            color: blueviolet;
+        }
+
+        span {
+            font-size: 24px;
+        }
+
+        .red {
+            color: brown;
+        }
+
+        .pos-line {
+            position: relative;
+            top: 60px;
+        }
+
+        .div-container {
+            height: 500px;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="heading">Date Method </h1>
+
+    <div class="div-container pos-line ">
+        <ul class="ul-right font">
+            <li class="gr">getDate()</li>
+            <li class="gr">getFullYear()</li>
+            <li class="gr">getMonth()</li>
+            <li class="or">getDay()</li>
+            <li class="or">getHours()</li>
+            <li class="or">getMinutes()</li>
+            <li class="or">getSeconds()</li>
+        </ul>
+        
+        <!-- <ul class="ul-center pos-ul-center font ul-left ">
+            <li class="or">match()</li>
+            <li class="or">indexOf()</li>
+            <li class="or">lastIndexOf()</li>
+            <li class="gr">replace()</li>
+            <li class="gr">trim()</li>
+            <li class="gr">charAt()</li>
+            <li class="gr">charCodeAt()</li>
+        </ul> -->
+        
+        <ul class="ul-left pos-ul-right font ">
+            <li class="or">setDate()</li>
+            <li class="or">setFullYear()</li>
+            <li class="or">setHours()</li>
+            <li class="red">setMilliseconds()</li>
+            <li class="red">setMinutes()</li>
+            <li class="red">toDateString()</li>
+            <!-- <li class="red"></li> -->
+        </ul>
+    </div>
+    <pre>
+        var date = new Date();
+
+        document.write(date);
+        
+        document.write(date.getDate());
+        
+        document.write(date.getFullYear());
+
+        document.write(date.getMonth());
+
+        document.write(date.getDay());
+
+        document.write(date.getHours());
+
+        document.write(date.getMinutes());
+
+        document.write(date.getSeconds());
+        
+        
+        
+        date.setDate(18);
+        document.write(date.getDate());
+        
+        date.setFullYear(2020);
+        document.write(date.getFullYear());
+        
+        date.setHours(17);
+        document.write(date.getHours());
+        
+        date.setMilliseconds(35);
+        document.write(date.getMilliseconds());
+        
+        date.setMinutes(23);
+        document.write(date.getMinutes());
+        
+        document.write(date.toDateString());
+
+    </pre>
+    <script>
+        var date = new Date();
+
+        document.write(date);
+        document.write("<br>");
+        
+        document.write(date.getDate());
+        document.write("<br>");
+        
+        document.write(date.getFullYear());
+        document.write("<br>");
+
+        document.write(date.getMonth());
+        document.write("<br>");
+
+        document.write(date.getDay());
+        document.write("<br>");
+
+        document.write(date.getHours());
+        document.write("<br>");
+
+        document.write(date.getMinutes());
+        document.write("<br>");
+
+        document.write(date.getSeconds());
+        document.write("<br>");
+        document.write("<br>");
+        document.write("<br>");
+        
+        
+        
+        date.setDate(18);
+        document.write(date.getDate());
+        document.write("<br>");
+        
+        date.setFullYear(2020);
+        document.write(date.getFullYear());
+        document.write("<br>");
+        
+        date.setHours(17);
+        document.write(date.getHours());
+        document.write("<br>");
+        
+        date.setMilliseconds(35);
+        document.write(date.getMilliseconds());
+        document.write("<br>");
+        
+        date.setMinutes(23);
+        document.write(date.getMinutes());
+        document.write("<br>");
+        
+        document.write(date.toDateString());
+
+    </script>
+</body>
+</html>

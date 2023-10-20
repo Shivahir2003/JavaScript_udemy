@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter-11 | Number Method |</title>
+    <style>
+        pre {
+            background-color: rgb(0, 0, 0);
+
+            padding: 23px;
+            font-size: 17px;
+            margin-left: 180px;
+            color: rgb(40, 155, 42);
+            width: max-content;
+            padding-left: 0;
+            border-radius: 23px;
+        }
+
+        .mg-3 {
+            margin-left: 34px;
+        }
+
+        .heading {
+            color: brown;
+            display: flex;
+            justify-content: center;
+        }
+
+        
+    </style>
+
+</head>
+
+<body>
+    <h1 class="heading">Numbers Method</h1>
+
+    <h3 class="mg-3">
+        ==> Number Method in JavaScript
+    </h3>
+
+    <pre>
+        var a="200";
+
+        var b= Number(a);
+        document.write(b + " ");
+        document.write(typeof b);
+
+
+        a=100.2;
+        document.write(parseInt(a));
+
+        document.write(parseFloat(a));
+
+        document.write(isFinite(a));
+
+
+        a=2.34343434;
+        
+        b= a.toFixed(3);
+        document.write(b);
+
+        b= a.toPreasion(3);
+        document.write(b);
+    </pre>
+
+    <script>
+        var a="200";
+
+        var b= Number(a);
+        document.write(b + " ");
+        document.write(typeof b);
+        document.write("<br>");
+
+
+        a=100.2;
+        document.write(parseInt(a));
+        document.write("<br>");
+
+        document.write(parseFloat(a));
+        document.write("<br>");
+
+        document.write(isFinite(a));
+        document.write("<br>");
+
+
+        a=2.34343434;
+        b= a.toFixed(3);
+        document.write(b);
+        document.write("<br>");
+
+        b= a.toPreasion(3);
+        document.write(b);
+        
+
+    </script>
+
+</body>
+
+</html>
